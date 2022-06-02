@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- katex -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/katex@latest/dist/katex.min.css"
+        />
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"
+            integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4"
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            defer 
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"
+            integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+            crossorigin="anonymous"
+            onload="renderMathInElement(document.body);">
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+                });
+            });
+        </script>
+        <!--  -->
+
+        <title>About Me</title>
+    </head>
+
+    <body>
+        
+    <body>
+        <header>
+            <span class='hide-on-small-screen'>
+<a class='mute-link' href='/'>⟵ Home</a>
+</span>
+            <nav>
+                <a class='mute-link' href='/'>Home</a>
+                ·
+                <a class='mute-link' href='/posts'>Posts</a>
+                ·
+                <a class='mute-link' href='/about'>About</a>
+            </nav>
+        </header>
+
+        
+    <div class='big-title'>About Me</div>
+    
+    <article>
+        <p>
+            I'm Gurdit, a master's student in computer science at <a href='https://www.cmi.ac.in/'>CMI</a>, and
+            I did my bachelor's in mathematics from <a href='http://www.du.ac.in/'>Delhi University</a>.
+            
+            I love mathematics and computer science, especially the subjects
+            that lie at their intersection.
+        </p>
+        <p>
+            Feel free to reach out to me at <span style='color:var(--color-accent-0)'>gurdit.siyan@gmail.com</span>.
+        </p>
+    </article>
+
+
+    </body>
+
+
+    </body>
+
+</html>

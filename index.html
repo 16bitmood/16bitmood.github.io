@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- katex -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/katex@latest/dist/katex.min.css"
+        />
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"
+            integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4"
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            defer 
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"
+            integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+            crossorigin="anonymous"
+            onload="renderMathInElement(document.body);">
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+                });
+            });
+        </script>
+        <!--  -->
+
+        <title>gurdit&#39;s website</title>
+    </head>
+
+    <body>
+        
+    <body>
+        <header>
+            <span class='hide-on-small-screen'></span>
+            <nav>
+                <a class='mute-link' href='/'>Home</a>
+                ·
+                <a class='mute-link' href='/posts'>Posts</a>
+                ·
+                <a class='mute-link' href='/about'>About</a>
+            </nav>
+        </header>
+
+        
+    <article>
+        <div class='big-title'>Hullo!</div>
+        <p>
+            I'm Gurdit, currently a master's student in computer science at <a href='https://www.cmi.ac.in/'>CMI</a>.
+            I love mathematics and computer science, especially the subjects
+            that lie at their intersection.
+        </p>
+
+        <p style='padding-left: 1em;'>
+            <a href='/about' style='text-decoration:none'>More ⟶</a>
+        </p>
+
+        <div class='recent-posts'>
+            <h2>Recent Posts</h2>
+            <hr />
+            <div style='padding-left: 1em; padding-right: 1em; margin-top:1em; margin-bottom:1em;'>
+            
+            
+                <div class='post-description'>
+                    <h3><a href="/posts/pix2pix/">Mapping Images to Images</a></h3>
+                    <div class='post-info'>
+                        <span>Thu Jun 02 2022</span>
+                        <span>~ 7</span>
+                    </div>
+                </div>
+            
+            </div>
+            <p style='padding-left: 1em;'>
+                <a href='/posts' style='text-decoration:none'>More ⟶</a>
+            </p>
+        </div>
+    </article>
+
+
+    </body>
+
+
+    </body>
+
+</html>
