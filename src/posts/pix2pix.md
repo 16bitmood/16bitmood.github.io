@@ -2,7 +2,7 @@
 layout: post.njk
 title: Mapping Images to Images
 date: 2022-06-02
-timeToRead: ~ 30
+timeToRead: ~ 7
 tags: blog
 ---
 
