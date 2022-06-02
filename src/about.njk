@@ -1,0 +1,26 @@
+---
+title: About Me
+---
+
+{% extends "hbase.njk" %}
+
+{% block backlink %}
+<a class='mute-link' href='/'>⟵ Home</a>
+{% endblock %}
+
+{% block content %}
+    <div class='big-title'>About Me</div>
+    {# <article style='font-size:1.3em;line-height:1.5em'> #}
+    <article>
+        <p>
+            I'm Gurdit, a master's student in computer science at <a href='https://www.cmi.ac.in/'>CMI</a>, and
+            I did my bachelor's in mathematics from <a href='http://www.du.ac.in/'>Delhi University</a>.
+            
+            I love mathematics and computer science, especially the subjects
+            that lie at their intersection.
+        </p>
+        <p>
+            Feel free to reach out to me at <span style='color:var(--color-accent-0)'>{{author.email}}</span>.
+        </p>
+    </article>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "hbase.njk" %}
+
+{% block backlink %}
+<a class='mute-link' href='/posts'>⟵ Posts</a>
+{% endblock %}
+
+{% block content %}
+    <article>
+        <div style='display:flex;justify-content:flex-start;width:100%;'>
+            <div class='break separator discrete-gradient-bg'> </div>
+        </div>
+
+        <h1 style='font-size:3em;'>{{ title }}</h1>
+        <div class='post-info'>
+            <span>{{ page.date.toDateString() }}</span>
+            <span>{{ timeToRead }} min </span>
+        </div>
+
+        {{ content | safe }}
+
+        <div style='display:flex;justify-content:flex-end;width:100%;'>
+            <div class='break separator discrete-gradient-bg-rev'> </div>
+        </div>
+    </article>
+
+    <footer>
+        <a class='mute-link' href="mailto:{{author.email}}">Email</a>
+        ·
+        <a class='mute-link' href="{{author.github}}">Github</a>
+        ·
+        <a class='mute-link' href="{{author.linkedin}}">Linkedin</a>
+        ·
+        <a class='mute-link' href="{{feedURL}}">RSS</a>
+    </footer>
+{% endblock %}

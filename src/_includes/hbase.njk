@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+
+{% block main %}
+    <body>
+        <header>
+            <span class='hide-on-small-screen'>{% block backlink %}{% endblock %}</span>
+            <nav>
+                <a class='mute-link' href='/'>Home</a>
+                ·
+                <a class='mute-link' href='/posts'>Posts</a>
+                ·
+                <a class='mute-link' href='/about'>About</a>
+            </nav>
+        </header>
+
+        {% block content %}{% endblock %}
+
+    </body>
+
+{% endblock %}
