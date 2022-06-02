@@ -1,0 +1,24 @@
+---
+title: Posts
+---
+
+{% extends "hbase.njk" %}
+
+{% block backlink %}
+<a class='mute-link' href='/'>⟵ Home</a>
+{% endblock %}
+
+{% block content %}
+    <div class='big-title'>Posts</div>
+    <article style='padding-left:1em;padding-right:1em;'>
+        {% for post in collections.blog | reverse %}
+        <div class='post-description'>
+            <h1 style='font-size:1.5em;'><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+            <div class='post-info'>
+                <span>{{ post.data.date.toDateString() }}</span>
+                <span>{{ post.data.timeToRead }} min </span>
+            </div>
+        </div>
+        {% endfor %}
+    </article>
+{% endblock %}
