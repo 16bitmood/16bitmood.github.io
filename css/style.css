@@ -10,6 +10,8 @@
     --font-monospace: 'Fira Mono', monospace;
     --font: var(--font-serif);
 
+    /* TODO: Mess around with other color-scheme generator */
+
     --color-accent-0: hsl(194, 90%, 20%);
     --color-accent-1: hsl(188, 70%, 40%);
     --color-accent-2: hsl(180, 60%,  60%);
